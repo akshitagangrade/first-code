@@ -47,17 +47,17 @@ List d = []
 a.each {item ->
     if (item.age > 20) {
        // println "${item.age}"
-        b.push (item.age)
+        b.push (item)
         }
     if ( item.age < 20){
-        d.push(item.age)
+        d.push(item)
     }
 } println("hen age is regater than 20")
 b.each {
-    println it
+    println "${it.firstName} ${it.lastName} (${it.age})"
 } println "age is greater thn 20"
 d.each {
-    println it
+    println "${it.firstName} ${it.lastName} (${it.age})"
 }
 
 
